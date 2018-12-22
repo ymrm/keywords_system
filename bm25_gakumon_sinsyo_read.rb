@@ -77,10 +77,15 @@ sinsyo_bm25_h.each{|ak,av|
     }
   }
 }
+match_keywords.each{|k,v|
+  v.uniq!
+}
 #p match_keywords
+i = 0
 match_keywords.each{|k,v|
   v.each{|vv|
-    print k ,"|",vv,"\n"
+    print i,"|","\"",k,"\"" ,"|\"",vv,"\"\n"
+    i += 1
   }
 }
 =begin keywords_system
