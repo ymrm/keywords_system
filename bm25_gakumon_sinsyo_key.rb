@@ -82,13 +82,16 @@ match_keywords.each{|k,v|
 #p match_keywords
 i = 0
 match_keywords.each{|k,v|
-#    print i,"|","\"",k,"\"","|\""
-  v.each{|vv|
+    print i,"|","\"",k,"\""#,"|\""
+#  v.each{|vv|
 #    print vv," "
-  }
-#    print "\"\n"
+#  }
+    print "\n"
     i += 1
 }
+
+=begin
+
 ########################################################################
 #コサイン類似度
 require 'complex'
@@ -145,3 +148,4 @@ cos_child_a.each{|child| #分子
 cos_a.each{|a|
 print a[0],",",a[1],",",a[2],"\n"
 }
+=end

@@ -26,7 +26,7 @@ keywords_a = Array.new
 
 ########################################################################
 #新書本
-text_file = "sinsyo_bm25.txt"
+text_file = "sinsyo_bm25_keyword.txt"
 #text_file = "sinsyo_bm25_mini.txt"
 file = open(text_file)
 
